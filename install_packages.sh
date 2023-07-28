@@ -33,6 +33,6 @@ echo "Now installing packages from grey wolf"
 
 sudo apt-get update -y 
 
-xargs sudo apt-get install -y < /path/to/destination/directory/installed_packages_list.txt
+xargs sudo apt-get install -y < ./installed_packages_list.txt
 
 
