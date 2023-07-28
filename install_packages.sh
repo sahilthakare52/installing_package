@@ -2,7 +2,7 @@
 
 echo "adding the repos"
 
-cp -r ./sources/* /etc/apt/
+sudo cp -r ./sources/* /etc/apt/
 
 
 
