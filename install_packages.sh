@@ -25,14 +25,12 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 echo "Now installing packages from grey wolf"
 
 
-#!/bin/bash
-
 sudo apt-get update -y 
 
 while IFS=$'\t' read -r package version origin; do
     echo "Installing $package ($version) from $origin repository"
     sudo apt-get install -y "$package"
-done < /path/to/destination/directory/installed_packages_list.txt
+done < ./installed_packages_list.txt
 
 
 
