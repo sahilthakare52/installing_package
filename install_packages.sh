@@ -1,11 +1,5 @@
 #!/bin/bash
 
-echo "adding the repos"
-
-sudo cp -r ./sources/* /etc/apt/
-
-
-
 echo "Installing docker:"
 
 sudo apt update 
