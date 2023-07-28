@@ -27,10 +27,6 @@ echo "Now installing packages from grey wolf"
 
 sudo apt-get update -y 
 
-while IFS=$'\t' read -r package version origin; do
-    echo "Installing $package ($version) from $origin repository"
-    sudo apt-get install -y "$package"
-done < ./installed_packages_list.txt
-
+xargs sudo apt-get install -y < /path/to/destination/directory/installed_packages_list.txt
 
 
